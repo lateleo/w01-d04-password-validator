@@ -1,5 +1,6 @@
 #require "pry"
 
+# Returns true or false based on whether or not the password is valid.
 def valid_password?(password)
   (password != password.downcase) &&
   (password != password.upcase) &&
@@ -9,6 +10,8 @@ def valid_password?(password)
   not_forbidden?(password)
 end
 
+# Returns true or false based on whether or not
+# the password contains no forbidden words.
 def not_forbidden?(password)
   forbidden_words = ["password"] # can add words to this list as necessary.
   result = true
