@@ -54,7 +54,7 @@ end
 # Returns true or false depending on if the string
 # contains the substring "password".
 def doesnt_contain_password?(password)
-  !password.include?("password")
+  !password.downcase.include?("password")
 end
 
 #binding.pry
